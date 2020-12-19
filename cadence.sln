@@ -21,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "cadence_web", ".", "{4A9528
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "11593"
+		SlnRelativePath = "..\cadence_web\"
 	EndProjectSection
 EndProject
 Global
