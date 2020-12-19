@@ -13772,7 +13772,7 @@ p {
 
 @media (max-width: 767px) {
     .heading h3 {
-        font-size: 30px;
+        font-size: 24px;
         line-height: 36px;
     }
 }
@@ -16145,7 +16145,7 @@ img.mfp-img {
 .w3l-index-block1 .banner-header {
     margin-top: 65px;
     background-color: rgb(17, 30, 38);
-    background-image: url("https://www.cadence.com/content/dam/cadence-www/global/en_US/images/site-images/page-banners/solutions/RF-banner.jpg");
+    background-image: url("../images/banner.jpg");
 }
 
 .w3l-index-block1 h1.header-font {
