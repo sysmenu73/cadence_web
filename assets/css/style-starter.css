@@ -13775,6 +13775,23 @@ p {
         font-size: 24px;
         line-height: 36px;
     }
+
+    .w3l-about2 h3.stat-title,.w3l-about3 h3.timeline-title,.w3l-about4 .header{
+         font-size: 24px !important;
+         line-height:36px !important;
+         text-align:center;
+    }
+
+    .w3l-about4 .map-title{
+        top:0px !important;
+        padding-bottom:20px;
+    }
+
+    .feature-body{text-align:center}
+    .w3l-about2 .feature-images{margin:auto}
+    .direction-r  .flag{ left: 70% ; }
+    .direction-l  .flag{ right: 70%;}
+  .w3l-about3 .flag{top:-20px}
 }
 
 .page-title {
@@ -15315,13 +15332,21 @@ button.owl-next {
 
     .w3l-about3 .direction-l .flag:before,
     .w3l-about3 .direction-r .flag:before {
-        top: -30px;
+        /*top: -30px;*/
         left: 50%;
         width: 30px;
         height: 30px;
         margin-left: -15px;
         border: 8px solid #fff;
     }
+    .w3l-about3 .direction-l .flag:before{
+         left: 120%;
+    }
+
+     .w3l-about3 .direction-r .flag:before{
+          left: -20%;
+     }
+
 
     .w3l-about3 .desc {
         position: relative;
@@ -16153,6 +16178,8 @@ img.mfp-img {
     font-size: 45px;
     line-height: 65px;
 }
+
+.w3l-about4 .map-title{top:-60px}
 
 @media (min-width: 1320px) {
 
