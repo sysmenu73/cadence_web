@@ -7323,34 +7323,34 @@ input[type="button"].btn-block {
         margin-bottom: -1px;
     }
 
-    .nav-tabs .nav-link {
-        border: 1px solid transparent;
-        border-top-left-radius: 0.25rem;
-        border-top-right-radius: 0.25rem;
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+    .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+        border-color: #e9ecef #e9ecef #dee2e6;
     }
 
-        .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-            border-color: #e9ecef #e9ecef #dee2e6;
-        }
-
-        .nav-tabs .nav-link.disabled {
-            color: #6c757d;
-            background-color: transparent;
-            border-color: transparent;
-        }
-
-        .nav-tabs .nav-link.active,
-        .nav-tabs .nav-item.show .nav-link {
-            color: #495057;
-            background-color: #fff;
-            border-color: #dee2e6 #dee2e6 #fff;
-        }
-
-    .nav-tabs .dropdown-menu {
-        margin-top: -1px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+    .nav-tabs .nav-link.disabled {
+        color: #6c757d;
+        background-color: transparent;
+        border-color: transparent;
     }
+
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link {
+        color: #495057;
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff;
+    }
+
+.nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 
 .nav-pills .nav-link {
     border-radius: 0.25rem;
@@ -13771,11 +13771,11 @@ p {
     }
 
     .heading.sm h3 {
-        font-size:28px;
+        font-size: 28px;
     }
 
 @media (max-width: 767px) {
-    .heading h3,.heading.sm h3 {
+    .heading h3, .heading.sm h3 {
         font-size: 24px;
         line-height: 36px;
     }
@@ -16214,10 +16214,15 @@ img.mfp-img {
     }
 }
 
-.bg-gray-light{
-    background-color:#f5f5f5;
+.bg-gray-light {
+    background-color: #f5f5f5;
 }
 
-.bg-gray{
-    background-color:#f0f0f0;
+.bg-gray {
+    background-color: #f0f0f0;
+}
+
+/*blue spec*/
+.nav-item.active .nav-link {
+    color: #151965 !important;
 }
