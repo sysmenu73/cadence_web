@@ -16180,6 +16180,7 @@ img.mfp-img {
     margin-top: 65px;
     background-color: rgb(17, 30, 38);
     background-image: url("../images/banner.jpg");
+	background-size:cover;
 }
 
 .w3l-index-block1 h1.header-font {
