@@ -16179,7 +16179,7 @@ img.mfp-img {
 .w3l-index-block1 .banner-header {
     margin-top: 65px;
     background-color: rgb(17, 30, 38);
-    background-image: url("../images/banner.jpg");
+    background-image: url("../images/billboard.jpg");
 	background-size:cover;
 }
 
@@ -16227,3 +16227,6 @@ img.mfp-img {
 .nav-item.active .nav-link {
     color: #151965 !important;
 }
+
+.hidden{display:none !important;}
+.s-block .img-wrap{height:170px;overflow:hidden}
