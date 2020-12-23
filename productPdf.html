@@ -28,13 +28,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">主页</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="productPdf.html">产品中心</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">关于我们</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="contact.html">联系我们</a>
                         </li>
                     </ul>
@@ -50,80 +50,10 @@
     <section class="w3l-contact mt-5">
         <div class="contacts-9 py-5 mt-5">
             <div class="container py-lg-3">
-                <div class="row top-map">
-                    <div class="cont-details col-md-5">
-                        <div class="heading  mb-lg-4 mb-4">
-                            <h3 class="head" style="margin:20px auto 40px">联系我们</h3>
-                        </div>
-                        <div class="cont-top">
-                            <div class="cont-left">
-                                <span class="fa fa-phone"></span>
-                            </div>
-                            <div class="cont-right">
-                                <p><a href="tel:13911538261">13911538261</a></p>
-                            </div>
-                        </div>
-                        <div class="cont-top mt-4">
-                            <div class="cont-left">
-                                <span class="fa fa-envelope-o"></span>
-                            </div>
-                            <div class="cont-right">
-                                <p><a href="mailto:admin@raispirit.com" class="mail">admin@raispirit.com</a></p>
-                            </div>
-                        </div>
-                        <div class="cont-top mt-4">
-                            <div class="cont-left">
-                                <span class="fa fa-map-marker"></span>
-                            </div>
-                            <div class="cont-right">
-                                <p>北京市海淀区美丽园中路16号院5号楼5层508</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map-content-9 col-md-7 mt-5 mt-md-0">
-                        <div class="map">
-                            <div id="allmap" class="wrap"></div>
-                        </div>
-                        <!--隐藏 form-->
-                        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="hidden">
-                            <div class="form-group row">
-                                <div class="col-md-6">
-                                    <label class="contact-textfield-label" for="w3lName">姓氏</label>
-                                    <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="" required="">
-                                </div>
-                                <div class="col-md-6 mt-md-0 mt-3">
-                                    <label class="contact-textfield-label" for="w3lName">名字</label>
-                                    <input type="text" class="form-control" name="w3lName" placeholder="" required="">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-md-6">
-                                    <label class="contact-textfield-label" for="w3lSender">电子邮箱</label>
-                                    <input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="" required="">
-                                </div>
-                                <div class="col-md-6 mt-md-0 mt-3">
-                                    <label class="contact-textfield-label" for="w3lPhone">手机号码</label>
-                                    <input type="tel" class="form-control" name="w3lPhone" id="w3lPhone" placeholder="" required="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="contact-textfield-label" for="w3lSubject">主题</label>
-                                <input type="text" class="form-control" name="w3lSubject" id="w3lSubject" placeholder="" required="">
-                            </div>
-                            <div class="form-group">
-                                <label class="contact-textfield-label" for="w3lMessage">内容</label>
-                                <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="" required=""></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-contact">发送</button>
-                        </form>
-                    </div>
+                <div id="file-container" style="width:100%;height:1120px">
                 </div>
             </div>
         </div>
-        <!--<div class="map">
-            <div id="allmap" class="wrap"></div>
-        </div>-->
-        <!--<div class="map" id="allmap" style="border:0" allowfullscreen=""></div>-->
     </section>
     <!-- //contacts -->
     <!-- footer-28 block -->
@@ -360,31 +290,50 @@
             });
         });
     </script>
+    <script src="assets/js/pdfobject.min.js"></script>
+    <script>PDFObject.embed("assets/file/clarity-3d-solver-ds.pdf", "#file-container");</script>
 
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=xY2dwogN4YPiD8urUQ862xGrwx6409RC"></script>
-    <script type="text/javascript">
-        // 百度地图API功能
-        var map = new BMap.Map("allmap");
-        map.addControl(new BMap.NavigationControl()); // 添加平移缩放控件
-        map.addControl(new BMap.ScaleControl()); // 添加比例尺控件
-        map.addControl(new BMap.OverviewMapControl()); //添加缩略地图控件
-        map.enableScrollWheelZoom();
-        var point = new BMap.Point(116.289195, 39.94104);//目标位置坐标（可改）可通过百度地图拾取器获取
-        var marker = new BMap.Marker(point); // 创建标注
-        map.addOverlay(marker); // 将标注添加到地图中
-        map.centerAndZoom(point, 15);
-        var opts = {
-            width: 280, // 信息窗口宽度
-            height: 100, // 信息窗口高度
-            title: "", // 信息窗口标题（可改）
-            enableMessage: false,//设置允许信息窗发送短息（为true时显示，为false时不显示）
-            message: "公司地址"
-        }
-        var infoWindow = new BMap.InfoWindow("公司：北京睿知捷科技有限公司 <br/>电话：13911538261<br>地址：北京市海淀区美丽园中路16号院5号楼5层508", opts); // 创建弹出信息窗口对象（电话地址可改）
-        map.openInfoWindow(infoWindow, point);
-        //marker.addEventListener("click", function () {
-        //    map.openInfoWindow(infoWindow, point); //开启信息窗口
-        //});
-    </script>
+    <!-- PDFObject 其他方法 先注释 -->
+    <!--<script type="text/javascript">
+        $(function () {
+            $("#file-container").height($(window).height() - 20);
+            $(window).resize(function () {
+                $("#file-container").height($(window).height() - 20);
+            });
+
+            viewpdf();
+
+        });
+
+        var viewpdf = function () {
+            var options = {};
+            if (PDFObject.supportsPDFs) {
+                //表示浏览器支持内联PDF
+                console.log("Yay, this browser supports inline PDFs.");
+                options = {
+                    page: 1,//默认显示第几页
+                    fallbackLink: "<p>This is a <a href='assets/file/clarity-3d-solver-ds.pdf'>fallback link</a></p>"
+                };
+            } else {
+                //表示浏览器不支持内联PDF
+                console.log("Boo, inline PDFs are not supported by this browser");
+                options = {
+                    pdfOpenParams: {
+                        navpanes: 0,
+                        toolbar: 0,
+                        statusbar: 0,
+                        view: "FitV",
+                        pagemode: "none",//thumbs=显示缩略图；none=不显示缩略图。
+                        locale: "zh-CN",
+                        page: 1//默认显示第几页
+                    },
+                    forcePDFJS: true,
+                    PDFJS_URL: "../Plugin/pdfjs/web/viewer.html"
+                };
+            }
+            var mypdf = PDFObject.embed("assets/file/clarity-3d-solver-ds.pdf", "#file-container", options);
+        };
+
+    </script>-->
 </body>
 </html>
