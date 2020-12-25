@@ -10,15 +10,15 @@
 </head>
 <body>
     <div class="w3l-bootstrap-header fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light p-2">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand col-md-7" href="index.html" style="font-size:24px;position:relative;top:-4px;">
-                    <span class="fa fa-joomla" style="font-size:30px;position:relative;top:11px;margin-right:10px"></span>北京睿知捷科技有限公司
+                <a class="navbar-brand col-md-7 mb-auto-w" href="index.html" style="font-size:24px;line-height:50px">
+                    <!--span class="fa fa-joomla" style="font-size:30px;position:relative;top:11px;margin-right:10px"></span>-->北京睿知捷科技有限公司
                 </a>
                 <!-- if logo is image enable this -->
                 <!--<a class="navbar-brand" href="#index.html" style="margin-right:0px">
-                    <img class="nav-logo" src="assets/images/logo-black.png" alt="Cadence" title="" />
-                </a>-->
+                <img class="nav-logo" src="assets/images/logo-black.png" alt="Cadence" title="" />
+            </a>-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="切换导航">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,6 +30,13 @@
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="productPdf.html">产品中心</a>
+                            <div class="seller-center-list  header-subsite-right-item-menu hidden">
+                                <ul class="account-nav">
+                                    <li><a href="#">服务商入驻</a></li>
+                                    <li><a href="#">进入卖家中心</a></li>
+                                    <li><a href="#">云市场商学院</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">关于我们</a>
@@ -39,9 +46,9 @@
                         </li>
                     </ul>
                     <!--<div class="form-inline">
-                        <a href="#login.html" class="login mr-4">Log in</a>
-                        <a href="#signup.html" class="btn btn-primary btn-theme">Create Free Account</a>
-                    </div>-->
+                    <a href="#login.html" class="login mr-4">Log in</a>
+                    <a href="#signup.html" class="btn btn-primary btn-theme">Create Free Account</a>
+                </div>-->
                 </div>
             </div>
         </nav>
@@ -250,7 +257,13 @@
         $(function () {
             $('.navbar-toggler').click(function () {
                 $('body').toggleClass('noscroll');
-            })
+            });
+
+            $('.nav-item').hover(function () {
+                $(this).children('.seller-center-list').removeClass('hidden');
+            }, function () {
+                $(this).children('.seller-center-list').addClass('hidden');
+            });
         });
     </script>
     <!-- disable body scroll which navbar is in active -->
