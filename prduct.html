@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>联系我们</title>
+    <title>产品中心</title>
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css" />
 </head>
@@ -17,22 +17,22 @@
                 </a>
                 <!-- if logo is image enable this -->
                 <!--<a class="navbar-brand" href="#index.html" style="margin-right:0px">
-                <img class="nav-logo" src="assets/images/logo-black.png" alt="Cadence" title="" />
-            </a>-->
+                    <img class="nav-logo" src="assets/images/logo-black.png" alt="Cadence" title="" />
+                </a>-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="切换导航">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!--<div class="col-md-5 col-xl-6"></div>-->
                 <div class="collapse navbar-collapse col-md-5" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto ">
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link" href="index.html">主页</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="javascript:void(0)">产品中心</a>
                             <div class="seller-center-list  header-subsite-right-item-menu hidden">
                                 <ul class="account-nav">
-                                    <li><a href="prduct.html">PCB设计与分析</a></li>
+                                    <li class="active"><a href="#">PCB设计与分析</a></li>
                                     <li><a href="#">AWR 系列</a></li>
                                     <li><a href="#">Clarity 系列</a></li>
                                 </ul>
@@ -41,98 +41,189 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">关于我们</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="contact.html">联系我们</a>
                         </li>
                     </ul>
                     <!--<div class="form-inline">
-                    <a href="#login.html" class="login mr-4">Log in</a>
-                    <a href="#signup.html" class="btn btn-primary btn-theme">Create Free Account</a>
-                </div>-->
+                        <a href="#login.html" class="login mr-4">Log in</a>
+                        <a href="#signup.html" class="btn btn-primary btn-theme">Create Free Account</a>
+                    </div>-->
                 </div>
             </div>
         </nav>
     </div>
-    <!-- contacts -->
-    <section class="w3l-contact mt-5">
-        <div class="contacts-9 py-5 mt-5">
-            <div class="container py-lg-3">
-                <div class="row top-map">
-                    <div class="cont-details col-md-5">
-                        <div class="heading  mb-lg-4 mb-4">
-                            <h3 class="head" style="margin:20px auto 40px">联系我们</h3>
-                        </div>
-                        <div class="cont-top">
-                            <div class="cont-left">
-                                <span class="fa fa-phone"></span>
-                            </div>
-                            <div class="cont-right">
-                                <p><a href="tel:13911538261">13911538261</a></p>
-                            </div>
-                        </div>
-                        <div class="cont-top mt-4">
-                            <div class="cont-left">
-                                <span class="fa fa-envelope-o"></span>
-                            </div>
-                            <div class="cont-right">
-                                <p><a href="mailto:admin@raispirit.com" class="mail">admin@raispirit.com</a></p>
-                            </div>
-                        </div>
-                        <div class="cont-top mt-4">
-                            <div class="cont-left">
-                                <span class="fa fa-map-marker"></span>
-                            </div>
-                            <div class="cont-right">
-                                <p>北京市海淀区美丽园中路16号院5号楼5层508</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map-content-9 col-md-7 mt-5 mt-md-0">
-                        <div class="map">
-                            <div id="allmap" class="wrap"></div>
-                        </div>
-                        <!--隐藏 form-->
-                        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="hidden">
-                            <div class="form-group row">
-                                <div class="col-md-6">
-                                    <label class="contact-textfield-label" for="w3lName">姓氏</label>
-                                    <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="" required="">
-                                </div>
-                                <div class="col-md-6 mt-md-0 mt-3">
-                                    <label class="contact-textfield-label" for="w3lName">名字</label>
-                                    <input type="text" class="form-control" name="w3lName" placeholder="" required="">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-md-6">
-                                    <label class="contact-textfield-label" for="w3lSender">电子邮箱</label>
-                                    <input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="" required="">
-                                </div>
-                                <div class="col-md-6 mt-md-0 mt-3">
-                                    <label class="contact-textfield-label" for="w3lPhone">手机号码</label>
-                                    <input type="tel" class="form-control" name="w3lPhone" id="w3lPhone" placeholder="" required="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="contact-textfield-label" for="w3lSubject">主题</label>
-                                <input type="text" class="form-control" name="w3lSubject" id="w3lSubject" placeholder="" required="">
-                            </div>
-                            <div class="form-group">
-                                <label class="contact-textfield-label" for="w3lMessage">内容</label>
-                                <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="" required=""></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-contact">发送</button>
-                        </form>
+    <!-- index-block1 -->
+    <div class="content pd-banner-header">
+        <div class="container">
+            <div class="pd-header row align-items-center py-md-5 py-3">
+                <h1 class="header-font title mt-2">产品中心</h1>
+                <p class="mt-2 en">PRODUCT</p>
+                <p class="mb-4 desc">
+                    从基础设施到行业应用领域，我们完善的产品助力您的业务腾飞
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <!-- //index-block1 -->
+    <!-- index-block2 -->
+    <section class="pd-wrap bg-gray">
+        <div class="container">
+            <div class="pd-sidebar">
+                <div class="wrap col-md-3">
+                    <div class="pd-box">
+                        <a href="#" class="title active">PCB 设计与分析</a>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="javascript:void(0)">原理图设计</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">PCB 版图设计</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">库与设计数据管理</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">模拟/混合信号仿真</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="bg-white col-md-12">
+                    <div class="pd-list ">
+                        <ul class="clear">
+                            <li class="pd-item">
+                                <div class="item-img">
+                                    <a href="javascript:;">
+                                        <img src="assets/images/p1.png">
+                                    </a>
+                                </div>
+                                <div class="item-content">
+                                    <h3 class="txtellipsis">
+                                        <a href="prduct-detail.html">Allegro Design Publisher</a>
+                                    </h3>
+                                    <p>Cadence 公司设计出版转换 Allegro 设计输入 HDL 示意图，以内容丰富的 Adobe 便携文档格式（PDF）文件，创建设计的安全，单文件表示。PDF文件提供了在层次结构中的导航以及对设计属性和约束的访问，使它们成为设计审查的理想选择</p>
+                                </div>
+                            </li>
+                            <li class="pd-item">
+                                <div class="item-img">
+                                    <a href="javascript:;">
+                                        <img src="assets/images/p1.png">
+                                    </a>
+                                </div>
+                                <div class="item-content">
+                                    <h3 class="txtellipsis">
+                                        <a href="prduct-detail.html">Allegro Design Publisher</a>
+                                    </h3>
+                                    <p>Cadence 公司设计出版转换 Allegro 设计输入 HDL 示意图，以内容丰富的 Adobe 便携文档格式（PDF）文件，创建设计的安全，单文件表示。PDF文件提供了在层次结构中的导航以及对设计属性和约束的访问，使它们成为设计审查的理想选择</p>
+                                </div>
+                            </li>         
+                            <li class="pd-item">
+                                <div class="item-img">
+                                    <a href="javascript:;">
+                                        <img src="assets/images/p1.png">
+                                    </a>
+                                </div>
+                                <div class="item-content">
+                                    <h3 class="txtellipsis">
+                                        <a href="prduct-detail.html">Allegro Design Publisher</a>
+                                    </h3>
+                                    <p>Cadence 公司设计出版转换 Allegro 设计输入 HDL 示意图，以内容丰富的 Adobe 便携文档格式（PDF）文件，创建设计的安全，单文件表示。PDF文件提供了在层次结构中的导航以及对设计属性和约束的访问，使它们成为设计审查的理想选择</p>
+                                </div>
+                            </li>
+                            <li class="pd-item">
+                                <div class="item-img">
+                                    <a href="javascript:;">
+                                        <img src="assets/images/p1.png">
+                                    </a>
+                                </div>
+                                <div class="item-content">
+                                    <h3 class="txtellipsis">
+                                        <a href="prduct-detail.html">Allegro Design Publisher</a>
+                                    </h3>
+                                    <p>Cadence 公司设计出版转换 Allegro 设计输入 HDL 示意图，以内容丰富的 Adobe 便携文档格式（PDF）文件，创建设计的安全，单文件表示。PDF文件提供了在层次结构中的导航以及对设计属性和约束的访问，使它们成为设计审查的理想选择</p>
+                                </div>
+                            </li>   
+                           
+                        </ul>
+                        <div class="dataTables_wrapper">
+                            <div class="dataTables_info">
+                                <span class="pagesStyle">总共<span class="recordsStyle"> 2 </span>条数据</span>
+                            </div>
+                            <div class="dataTables_paginate paging_simple_numbers">
+                                <div><a href="javascript:void(0)" class="paginate_button previous disabled" title="上一页">上一页</a><span><a href="javascript:void(0)" class="paginate_button current" onclick="changePageIndex(1)">1</a><span></span></span><a href="javascript:void(0)" class="paginate_button next disabled" title="下一页">下一页</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
         </div>
-        <!--<div class="map">
-            <div id="allmap" class="wrap"></div>
-        </div>-->
-        <!--<div class="map" id="allmap" style="border:0" allowfullscreen=""></div>-->
     </section>
-    <!-- //contacts -->
+    <!-- /index-block2 -->
+    <!-- partners -->
+    <section class="w3l-index-block9 hidden">
+        <div class="partners py-6 bg-gray">
+            <div class="container py-lg-3">
+                <div class="heading text-center mx-auto">
+                    <h3 class="head">超过16,000家公司信任我们的惊人产品</h3>
+                </div>
+                <div class="row col-md-10 justify-content-between grid-part text-center mx-auto">
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-cc-visa"></span></div>
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-digg"></span></div>
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-lastfm"></span></div>
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-cc-discover"></span></div>
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-ravelry"></span></div>
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-cc-stripe"></span></div>
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-cc-visa"></span></div>
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-digg"></span></div>
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-lastfm"></span></div>
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-cc-discover"></span></div>
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-ravelry"></span></div>
+                    <div class="parts-w3ls col-sm-2 col-6 mt-5"><span class="fa fa-cc-stripe"></span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- //partners -->
+    <!-- subscribe section -->
+    <!--<section class="w3l-index-block6 py-5">
+        <div class="container py-lg-3">
+            <div class="subscribe mx-auto">
+                <div class="heading text-center mx-auto">
+                    <h3 class="head">Stay Updated!</h3>
+                    <p class="my-3 head">
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
+                        dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+                    </p>
+                </div>
+                <form action="#" method="post" class="subscribe-wthree pt-2 mt-5">
+                    <div class="d-flex flex-wrap subscribe-wthree-field">
+                        <input class="form-control" type="email" placeholder="Enter your email..." name="email" required="" />
+                        <button class="btn form-control btn-primary" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>-->
+    <!-- index-block8 -->
+    <!--<section class="w3l-index-block8 py-5">
+        <div class="container py-md-3 text-center">
+            <div class="heading text-center mx-auto">
+                <h3 class="head">Ready to get started?</h3>
+            </div>
+            <div class="buttons mt-4">
+                <a href="contact.html" class="btn btn-outline-primary mr-2 btn-demo">Book a Demo</a>
+                <a href="contact.html" class="btn btn-primary btn-demo ml-2">Get Started</a>
+            </div>
+        </div>
+    </section>-->
+    <!-- / index-block8 -->
     <!-- footer-28 block -->
     <section class="w3l-market-footer">
         <footer class="footer-28">
@@ -287,8 +378,10 @@
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Template JavaScript -->
+
     <script src="assets/js/owl.carousel.js"></script>
     <!-- script for owlcarousel -->
+
     <script>
         $(document).ready(function () {
             $('.owl-one').owlCarousel({
@@ -320,9 +413,11 @@
                 }
             })
         })
+
     </script>
     <!-- //script for owlcarousel -->
     <!-- disable body scroll which navbar is in active -->
+
     <script>
         $(function () {
             $('.navbar-toggler').click(function () {
@@ -341,6 +436,7 @@
         });
     </script>
     <!-- disable body scroll which navbar is in active -->
+
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -376,32 +472,7 @@
                 mainClass: 'my-mfp-slide-bottom'
             });
         });
-    </script>
 
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=xY2dwogN4YPiD8urUQ862xGrwx6409RC"></script>
-    <script type="text/javascript">
-        // 百度地图API功能
-        var map = new BMap.Map("allmap");
-        map.addControl(new BMap.NavigationControl()); // 添加平移缩放控件
-        map.addControl(new BMap.ScaleControl()); // 添加比例尺控件
-        map.addControl(new BMap.OverviewMapControl()); //添加缩略地图控件
-        map.enableScrollWheelZoom();
-        var point = new BMap.Point(116.289195, 39.94104);//目标位置坐标（可改）可通过百度地图拾取器获取
-        var marker = new BMap.Marker(point); // 创建标注
-        map.addOverlay(marker); // 将标注添加到地图中
-        map.centerAndZoom(point, 15);
-        var opts = {
-            width: 280, // 信息窗口宽度
-            height: 100, // 信息窗口高度
-            title: "", // 信息窗口标题（可改）
-            enableMessage: false,//设置允许信息窗发送短息（为true时显示，为false时不显示）
-            message: "公司地址"
-        }
-        var infoWindow = new BMap.InfoWindow("公司：北京睿知捷科技有限公司 <br/>电话：13911538261<br>地址：北京市海淀区美丽园中路16号院5号楼5层508", opts); // 创建弹出信息窗口对象（电话地址可改）
-        map.openInfoWindow(infoWindow, point);
-        //marker.addEventListener("click", function () {
-        //    map.openInfoWindow(infoWindow, point); //开启信息窗口
-        //});
     </script>
 </body>
 </html>
