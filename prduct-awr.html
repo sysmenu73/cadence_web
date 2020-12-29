@@ -33,7 +33,7 @@
                             <div class="seller-center-list  header-subsite-right-item-menu hidden">
                                 <ul class="account-nav">
                                     <li class="active"><a href="#">PCB设计与分析</a></li>
-                                    <li><a href="#">AWR 系列</a></li>
+                                    <li><a href="prduct-awr.html">AWR 系列</a></li>
                                     <li><a href="#">Clarity 系列</a></li>
                                 </ul>
                             </div>
@@ -166,7 +166,7 @@
                                 <span class="pagesStyle">总共 <span class="recordsStyle" id="dataCount">5</span> 条数据</span>
                             </div>
                             <div class="dataTables_paginate paging_simple_numbers">
-                                <div><a href="javascript:void(0)" class="paginate_button previous disabled" title="上一页">上一页</a><span><a href="prduct-awr.html" class="paginate_button current">1</a><span></span></span><a href="javascript:void(0)" class="paginate_button next disabled" title="下一页">下一页</a></div>
+                                <div><a href="javascript:void(0)" class="paginate_button previous disabled" title="上一页">上一页</a><span><a href="javascript:void(0)" class="paginate_button current">1</a><span></span></span><a href="javascript:void(0)" class="paginate_button next disabled" title="下一页">下一页</a></div>
                             </div>
                         </div>
                     </div>
@@ -328,6 +328,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script>
         $(function () {
+            initData();
             $('.navbar-toggler').click(function () {
                 $('body').toggleClass('noscroll');
             });
@@ -372,6 +373,10 @@
             if (urlOrg != null) {
                 location.href = document.location.href.replace(name + '=' + urlOrg, '');
             }
+        }
+
+        function initData() {
+            $('#dataCount').html($('#pd-ul-list li').length);
         }
     </script>
 </body>

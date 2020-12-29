@@ -16472,6 +16472,14 @@ ul, li, dd, dl {
                 color: #fff;
                 border-color: #c7000b;
             }
+  .paginate_button.disabled {
+    pointer-events: none;
+    filter: alpha(opacity=60);
+    -moz-opacity: .6;
+    -khtml-opacity: .6;
+    opacity: .6;
+}
+  
 
 .pd-detail-wrap {
     padding: 50px 15px;
