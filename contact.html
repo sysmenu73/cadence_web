@@ -29,8 +29,8 @@
                             <a class="nav-link" href="index.html">主页</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">产品中心</a>
-                            <div class="seller-center-list  header-subsite-right-item-menu hidden">
+                            <a class="nav-link" data-toggle="collapse" data-target="#sellerContent" aria-controls="sellerContent" aria-expanded="true" href="javascript:void(0)">产品中心</a>
+                            <div class="seller-center-list  header-subsite-right-item-menu hidden" id="sellerContent">
                                 <ul class="account-nav">
                                     <li><a href="prduct-pcb.html">PCB设计与分析</a></li>
                                     <li><a href="prduct-awr.html">AWR 系列</a></li>
@@ -286,41 +286,6 @@
     <!-- jQuery, Bootstrap JS -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Template JavaScript -->
-    <script src="assets/js/owl.carousel.js"></script>
-    <!-- script for owlcarousel -->
-    <script>
-        $(document).ready(function () {
-            $('.owl-one').owlCarousel({
-                loop: true,
-                margin: 0,
-                nav: true,
-                responsiveClass: true,
-                autoplay: false,
-                autoplayTimeout: 5000,
-                autoplaySpeed: 1000,
-                autoplayHoverPause: false,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    480: {
-                        items: 1,
-                        nav: false
-                    },
-                    667: {
-                        items: 1,
-                        nav: true
-                    },
-                    1000: {
-                        items: 1,
-                        nav: true
-                    }
-                }
-            })
-        })
-    </script>
     <!-- //script for owlcarousel -->
     <!-- disable body scroll which navbar is in active -->
     <script>
@@ -329,53 +294,43 @@
                 $('body').toggleClass('noscroll');
             });
 
-            $('.nav-item').hover(function () {
-                $(this).children('.seller-center-list').removeClass('hidden');
-            }, function () {
-                $(this).children('.seller-center-list').addClass('hidden');
-            });
-
             $('.navbar-nav li').click(function () {
                 $(this).addClass('active').siblings().removeClass('active');
             })
+
+            if (isMobile()) {
+                $('#sellerContent').removeClass('hidden').addClass('collapse')
+            } else {
+                $('.seller-center-list.header-subsite-right-item-menu').attr("id", "");
+                $('.nav-item').hover(function () {
+                    $(this).children('.seller-center-list').removeClass('hidden');
+                }, function () {
+                    $(this).children('.seller-center-list').addClass('hidden');
+                });
+            }
+
         });
-    </script>
-    <!-- disable body scroll which navbar is in active -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.popup-with-zoom-anim').magnificPopup({
-                type: 'inline',
 
-                fixedContentPos: false,
-                fixedBgPos: true,
+        function isMobile() {
+            var userAgentInfo = navigator.userAgent;
+            var mobileAgents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+            var mobile_flag = false;
+            //根据userAgent判断是否是手机
+            for (var v = 0; v < mobileAgents.length; v++) {
+                if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
+                    mobile_flag = true;
+                    break;
+                }
+            }
+            var screen_width = window.screen.width;
+            var screen_height = window.screen.height;
 
-                overflowY: 'auto',
-
-                closeBtnInside: true,
-                preloader: false,
-
-                midClick: true,
-                removalDelay: 300,
-                mainClass: 'my-mfp-zoom-in'
-            });
-
-            $('.popup-with-move-anim').magnificPopup({
-                type: 'inline',
-
-                fixedContentPos: false,
-                fixedBgPos: true,
-
-                overflowY: 'auto',
-
-                closeBtnInside: true,
-                preloader: false,
-
-                midClick: true,
-                removalDelay: 300,
-                mainClass: 'my-mfp-slide-bottom'
-            });
-        });
+            //根据屏幕分辨率判断是否是手机
+            if (screen_width < 500 && screen_height < 800) {
+                mobile_flag = true;
+            }
+            return mobile_flag;
+        }
     </script>
 
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=xY2dwogN4YPiD8urUQ862xGrwx6409RC"></script>

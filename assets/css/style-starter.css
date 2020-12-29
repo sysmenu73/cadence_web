@@ -16595,4 +16595,8 @@ ul, li, dd, dl {
     .pd-header > p.en {
         font-size: 14px;
     }
+
+    .w3l-bootstrap-header li.nav-item{line-height:26px}
+    .seller-center-list{position:relative;width:auto;margin:auto -20px;padding:0 20px;font-size:13px;box-shadow:none}
+  .seller-center-list  .account-nav{padding:15px 0}
 }
