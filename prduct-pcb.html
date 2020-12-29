@@ -626,12 +626,6 @@
                 $('#pdTypeTitle').removeClass('active');
                 $(this).parent().addClass('active').siblings().removeClass('active');
                 controlPageData(this);
-                //$('#pd-ul-list li').addClass('hidden');
-                //var index = $(this).attr('data-index');
-                //var indexArry = index.split('|');
-                //$.each(indexArry, function (i, o) {
-                //    $('#pd-ul-list li').eq(o).removeClass('hidden');
-                //})
                 $('#dataCount').html($('#pd-ul-list li').not('.hidden').length);
                 $('#pageOne').removeClass('hidden');
                 $('#pageMuilt').addClass('hidden');
@@ -641,6 +635,13 @@
             if (urlType != null) {
                 $('#pdType li').eq(urlType).children('a').click();
             }
+
+            //$('#pd-ul-list li').bind('touchstart', function (e) {
+            //    var aa = $(this).find("a");
+            //    console.log(aa);
+            // // alert(aa.html());
+
+            //})
         });
 
         function getUrlParam(name) {
