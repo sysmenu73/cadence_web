@@ -16487,6 +16487,11 @@ ul, li, dd, dl {
     /*border-left: 1px solid #e5e5e5;*/
     overflow: hidden;
 }
+.pd-detail-wrap li{
+    list-style:disc;
+    margin-left:2em;
+}
+
 .pd-wrap.detail{margin-top:30px}
 .pd-wrap .page-bar {
     position: relative;
