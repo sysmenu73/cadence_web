@@ -16286,6 +16286,10 @@ ul, li, dd, dl {
             color: #c7000b; /*a标签颜色样式*/
         }
 
+        .seller-center-list li a{
+            color:#333;
+        }
+
 .pd-banner-header {
     margin-top: 65px;
     background-color: rgb(17, 30, 38);
