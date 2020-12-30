@@ -1,14 +1,5 @@
-﻿/* 
-Author: W3layouts
-Author URL: http://w3layouts.com
- */
+﻿
 @charset "UTF-8";
-/*!
- *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
-/* FONT PATH
- * -------------------------- */
 @font-face {
     font-family: 'FontAwesome';
     src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -13980,11 +13971,15 @@ h4.sub-title {
     .w3l-bootstrap-header .navbar-collapse {
         background: var(--light-bg-color);
         border-radius: 4px;
-        padding: 10px;
+        padding: 0px;
         border: 1px solid #eee;
         max-height: calc(100vh - 70px);
         overflow-y: auto;
     }
+
+   .w3l-bootstrap-header .navbar-collapse .navbar-nav{
+       padding:10px;
+   }
 }
 
 /*--/content with photo5--*/
