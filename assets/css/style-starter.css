@@ -3186,7 +3186,7 @@ sup {
 }
 
 a {
-    color: #151965;
+    color: #333;
     text-decoration: none;
     background-color: transparent;
 }
@@ -16034,7 +16034,7 @@ img.mfp-img {
 
     .w3l-contact .cont-details p a:hover {
         text-decoration: underline;
-        color: #151965;
+        color: #c7000b;
     }
 
 .w3l-contact .cont-details address {
