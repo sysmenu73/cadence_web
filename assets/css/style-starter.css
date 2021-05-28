@@ -16535,6 +16535,14 @@ ul, li, dd, dl {
      text-decoration:underline;
  }
 
+ .rcode-wrap{
+     height:200px;
+     margin:40px 20px 10px;
+     overflow:hidden;
+ }
+
+.rcode-wrap img{height:100%;width:auto;}
+
 @media (max-width: 767px) {
     .pd-wrap {
         padding: 0;
@@ -16594,4 +16602,5 @@ ul, li, dd, dl {
     .w3l-bootstrap-header li.nav-item{line-height:26px}
     .seller-center-list{position:relative;width:auto;margin:auto -20px;padding:0 20px;font-size:13px;box-shadow:none}
   .seller-center-list  .account-nav{padding:15px 0}
+  .rcode-wrap{margin:auto}
 }
